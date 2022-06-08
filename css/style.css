@@ -655,12 +655,15 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
   cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close-btn:focus {
+.modal-close-btn:focus,
+.modal-close-btn:hover {
   border-color: var(--accent-color);
 }
 .contact-form-field {
   display: block;
+  margin-bottom: 4px;
   
 }
 .contact-form-input {
@@ -670,9 +673,11 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
+  cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-form-input:focus {
+.contact-form-input:focus,
+.contact-form-input:hover {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -687,6 +692,7 @@ img {
   margin-top: 4px;
   padding: 12px 16px;
   resize: none;
+  cursor: pointer;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-form-message::placeholder {
@@ -696,7 +702,8 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.contact-form-message:focus {
+.contact-form-message:focus,
+.contact-form-message:hover {
   outline: none;
   border-color: var(--accent-color);
 }
@@ -710,7 +717,6 @@ img {
 .contact-form-input-wrapper {
   position: relative;
   display: block;
-  margin-bottom: 4px;
   margin-top: 4px;
 }
 .contact-form-field-title {
@@ -723,9 +729,9 @@ img {
 }
 .form-icon {
   position: absolute;
-  width: 18px;
-  height: 18px;
-  top: 50%;
+  width: 12px;
+  height: 12px;
+  top: 54%;
   left: 12px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
